@@ -1,0 +1,30 @@
+div.hidden {
+  display: none;
+}
+
+.map-icon {
+  width: 2.6em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.event-show-map {
+   height: 50%;
+   width: 50%;
+   position: absolute;
+
+}
+
+.event-index-map {
+  height: 500px;
+  position: relative;
+  overflow: show;
+
+}
+
+
+
+#infowindow-content {
+  display: none;
+
+}

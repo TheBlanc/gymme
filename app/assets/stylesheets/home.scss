@@ -1,0 +1,103 @@
+.home {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+}
+
+.event-reults {
+  display: block;
+}
+
+.home-hero-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/assets/ocean-horizon.jpg);
+  background-size: 100%;
+  background-position: 0 45%;
+  background-repeat: no-repeat;
+  height: 200px;}
+
+.home-page .top-heading {
+  top: 87px;
+  left: 31%;
+}
+
+.home-page .sub-heading {
+  top: 140px;
+  left: 31%;
+}
+
+
+.home-page-heading {
+  font-size: 1.5em;
+  margin: 4em 0 2em 0;
+}
+
+.home p.date {
+  margin: 0.2em;
+  font-size: 0.8em;
+}
+
+.no-rsvps {
+  font-style: italic;
+  margin: 4.5em 0 0 0;
+  font-size: 1.2em;
+}
+
+.home-greeting {
+  font-size: 1.2em;
+
+}
+
+.home a {
+  text-decoration: none;
+  color: black;
+}
+.home a:active {
+  background-color: #c3c3c3;
+}
+
+.event-cards-container {
+  max-width: 700px;
+}
+
+.event-icon {
+  display: inline-block;
+  width: 80px;
+  margin: auto;
+}
+
+.event-icon-container {
+
+}
+
+.event-info {
+  padding: 0 0 0 15px;
+}
+
+
+
+.home-heading {
+  text-align: center;
+  margin: 1em 0.5em 0 1.7em;
+  font-size: 1.2em;
+}
+
+.event-title {
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.greeting-help {
+  width: 9em;
+  display: inline-block;
+}

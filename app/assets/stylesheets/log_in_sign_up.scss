@@ -1,0 +1,128 @@
+.overlay {
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: grey;
+  opacity: 0.7;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.sign-in-modal {
+  position: fixed;
+  left: 36%;
+  top: 18%;
+  border: solid black 2px;
+  z-index: 1000;
+  background-color: lightblue;
+
+}
+
+.session-form {
+  text-align: center;
+
+}
+
+.sign-in {
+  padding: 5px 0 5px 0;
+  margin: 20px 20px 0 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.sign-in-button {
+ width: 100px;
+ align-self: flex-end;
+ margin-top: 10px;
+ background-color: white;
+ text-decoration: none;
+ color: black;
+ text-align: center;
+ padding: 15px 15px;
+}
+
+  .sign-in-button:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+  .sign-in-button:active {
+    background-color: grey;
+  }
+
+
+.log-in .large-submit-button > input[type="submit"] {
+  margin: 0;
+}
+
+.log-in .field {
+  margin: 17px 0;
+}
+
+
+.log-in-heading {
+  font-size: 2em;
+}
+
+.login-avatar {
+  display: inline-block;
+  width: 8em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+// .speech {
+//   position: absolute;
+//   bottom: 0;
+//   left: 11em;
+//   width: 10em;
+// }
+
+.login-greeting {
+  margin: 0.5em 0;
+  position: relative;
+  bottom: -3.4em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sign-up .field {
+  margin: 10px 0;
+}
+
+.field > label {
+  font-size: 1.3em;
+  margin: 0.3em 0;
+}
+
+.field > input {
+  width: 15.3em;
+  height: 2.1em;
+  font-size: 1.2em;
+}
+
+.check-field > input {
+  width: 2em;
+  height: 2em;
+  font-size: 1.4em;
+  vertical-align: middle;
+}
+
+.links {
+  margin: 1em 0;
+}
+
+.links a {
+  font-size: 1.4em;
+
+}
+
+.form-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}

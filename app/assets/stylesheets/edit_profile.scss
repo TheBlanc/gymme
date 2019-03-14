@@ -1,0 +1,106 @@
+// ------------- HEADING AND HERO IMAGE -------------
+.new-event {
+  background-color: white;
+  color: black;
+  padding: 5px 5px;
+
+}
+
+.top-heading {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+
+.sub-heading {
+  font-size: 10px;
+  letter-spacing: 1px;
+
+}
+
+.edit-profile .hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/assets/ocean-horizon.jpg);
+  background-size: 100%;
+  background-position: 0 10%;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+// ------------- FORM -------------
+.edit-profile-form {
+  margin: 25px auto 50px auto;
+  padding: 0 50px;
+  max-width: 700px;
+}
+
+.profile-form-card {
+  border-bottom: solid grey 1px;
+  padding: 30px 62px;
+}
+
+.form-item {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.form-item.name {
+  display: block;
+  padding: 0 57px;
+}
+
+.form-item.schedule {
+  padding: 0 57px;
+  font-size: 19px;
+}
+
+.form-item.description {
+  padding: 0 58px;
+}
+
+.profile-form-card.last {
+  border-bottom: none;
+}
+
+textarea {
+  width: 370px;
+  height: 100px;
+}
+
+.description {
+  border-bottom: none;
+}
+
+.form-item h3 {
+  font-weight: bold;
+  padding: 10px 0 5px 0;
+  font-size: 19px;
+}
+
+.profile-form-item.submit {
+  padding: 0 72px;
+  margin: 20px 0;
+}
+
+.profile-form-item.submit input {
+  padding: 7px 12px;
+  background-color: #86d9f1;
+  font-size: 19px;
+}
+
+.advanced {
+  text-align: right;
+}
+
+
+
+
+// ------------- ICONS -------------
+.form-item-icon {
+  display: inline-block;
+  width: 50px;
+}

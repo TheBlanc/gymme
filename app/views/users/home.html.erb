@@ -1,0 +1,76 @@
+<div class="navBar">
+<% if current_user %>
+  <%= render "shared/nav_bar" %>
+<% else %>
+  <%= render "shared/landing_nav_bar" %>
+<% end %>
+</div>
+
+<div  class="signIn">
+<% if !current_user %>
+<nav class="sign-in">
+  <p>Already a Member?</p>
+  <a href="/users/sign_in" class="sign-in-button">Sign In</a>
+</nav>
+<% end %>
+</div>
+
+
+
+<section class="home-page">
+  <div class="home-hero-image">
+    <div class="new-event top-heading">
+      <h1 class="new-event-heading">Your Schedule</h1>
+    </div>
+    <div class="new-event sub-heading">
+      <h2 class="new-event-heading">Look how organized you are.</h2>
+    </div>
+  </div>
+</section>
+
+<section class="event-results home">
+
+  <% if @user == current_user %>
+    <% if @events.length > 0 %>
+      <div class="event-cards-container">
+        <h2 class="home-heading">Upcomming Events</h2>
+      <% @events.each do |event| %>
+        <%= link_to event_url(event.id) do %>
+          <div class="event-card">
+            <div class="event-icon-container">
+              <div class="event-icon"><%= image_tag(event_activity_icon(event)) %></div>
+            </div>
+            <div class="event-info">
+              <p class="date"><%= event.time.strftime("%A %b %d, %Y") %></p>
+              <h3 class="event-title"><%= event.title %></h3>
+              <p class="event-description"><%= event.description %></p>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+      </div>
+    <% else %>
+      <div class="event-cards-container">
+        <p class="no-rsvps">No Upcomming Events...</p>
+        <h2 class="home-greeting">Let Jimmy help you with that!</h2>
+        <%= link_to discover_path do %>
+          <div class="big-button">Find Event</div>
+        <% end %>
+        <div class="greeting-help">
+          <%= image_tag("gym.svg") %>
+        </div>
+      </div>
+    <% end %>
+    <% if @owned_events.length > 0 %>
+      <h2 class="home-heading">Events You're Hosting</h2>
+        <% @owned_events.each do |event| %>
+          <div class="event-card">
+            <p class="date"><%= event.time.strftime("%A %b %d, %Y at %I:%M%p") %></p>
+            <h3 class="event-title"><%= link_to event.title, event_url(event.id)%></h3>
+            <div class="event-icon"><%= image_tag(event_activity_icon(event)) %></div>
+            <p><%= event.description %></p>
+          </div>
+        <% end %>
+    <% end %>
+  <%end %>
+</section>

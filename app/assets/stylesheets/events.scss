@@ -1,0 +1,115 @@
+.event-reults {
+  max-width: 42em;
+  margin: auto;
+}
+
+.event-card {
+  display: flex;
+  background-color: white;
+  margin: 1em 2em 1em 2em;
+  padding: 1em 1em 0 1em;
+  border: 1px solid black;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.event-card a {
+  color: black;
+}
+.event-card a:hover {
+  color: grey;
+}
+
+.event-description {
+  margin: 0.5em 0 1em 0;
+  line-height: 20px;
+}
+
+.event-card.address {
+  margin: 0;
+}
+
+.icon-button.message {
+  width: 2.8em;
+}
+
+.form-item {
+  font-size: 1.2em;
+}
+.form-item input {
+  font-size: 1em;
+}
+.form-item select {
+  font-size: 1em;
+}
+.form-item textarea {
+  font-size: 1em;
+}
+
+.new-event-heading {
+  font-size: 1.8em;
+}
+
+// EVENT SHOW PAGE
+
+.event-page {
+  max-width: 700px;
+  margin: auto;
+}
+
+.event-info {
+}
+
+.event-ticket {
+
+}
+
+.event-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-info-title {
+  font-size: 0.8em;
+
+}
+
+.event-header {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.event-details-continer {
+  margin: 20px 0;
+}
+
+.event-details {
+  line-height: 25px
+}
+
+.event-date {
+  font-size: 0.8em;
+}
+
+.event-header {
+  margin: 5px 0;
+}
+
+
+.comment-area {
+  margin: 20px 0;
+}
+
+
+.comment-area .field label {
+  font-size: 0.8em;
+}
+
+.event-show-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-ticket {
+}

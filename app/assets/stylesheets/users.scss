@@ -1,0 +1,130 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Profile Page
+
+.profile-info {
+  display: inline-block;
+  width: 80%;
+
+}
+
+
+
+.profile-card {
+  border-bottom: solid black 1px;
+}
+
+.user-profile-card {
+  max-width: 800px;
+  text-align: left;
+}
+
+.user-name {
+  display: block;
+  border-bottom: solid black 1px;
+  padding: 0 0 10px 0;
+
+}
+
+.profile-item {
+  display: inline-block;
+  margin: 10px 30px;
+  vertical-align: top;
+}
+
+.user-name h1 {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.profile-item h2 {
+  font-size: 0.8em;
+}
+
+.profile-item h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.profile-item h2, .profile-item h3 {
+  padding: 3px 0;
+}
+
+.profile-item p {
+  line-height: 24px;
+  margin: 10px 0;
+}
+
+.user-card {
+  background-color: white;
+  margin: 1em 2em;
+  padding: 1em;
+  border: 1px solid #e50000;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+.user-reults {
+  max-width: 42em;
+  margin: auto;
+}
+
+
+.profile-avatar {
+  display: inline-block;
+  width: 18%;
+  vertical-align: top;
+  float: right;
+  padding: 0;
+}
+
+
+.user-profile-card {
+    padding: 16px 16px 0 16px;
+  	background: white;
+    margin: auto;
+    width: 90%;
+    margin-top: 1em;
+    /* Add shadows to create the "card" effect */
+  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+  	border-radius: 5px; /* 5px rounded corners */
+  }
+
+.profile {
+    position: relative;
+    padding: 1em;
+  	background: white;
+    margin: auto;
+    width: 90%;
+    margin-top: 1em;
+    /* Add shadows to create the "card" effect */
+  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+  	border-radius: 5px; /* 5px rounded corners */
+}
+
+// on user show page message icon.
+  .send-message-icon {
+    width: 5em;
+    height: 5em;
+  }
+
+  // ----------- Discover and Results page -----------
+
+.gym-buddy-hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/assets/woman-basketball.jpg);
+  background-size: 100%;
+  background-position: 0 45%;
+  background-repeat: no-repeat;
+  height: 200px;
+
+}

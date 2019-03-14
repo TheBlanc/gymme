@@ -1,0 +1,105 @@
+.discover-hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/assets/mountain.jpg);
+  background-size: 148%;
+  background-position: 0 65%;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.form-card.discover{
+  text-align: center;
+
+}
+.event-index {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.discover h2 {
+  font-weight: bold;
+}
+
+
+.discover-header {
+  margin: 2em 0 0 0;
+  font-size: 1.7em;
+}
+
+.activity-type-header {
+  margin: 0 0 0.5em 0;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+.activity-type-description {
+  margin: 0 0 5px 0;
+}
+
+.activity-icons-wrapper {
+  max-width: 257px;
+  margin: 10px auto;
+}
+
+.activity-icon {
+  margin: 7px;
+  display: inline-block;
+  background: white;
+  width: 7em;
+  border-radius: 27%;
+}
+
+.activity-type > img {
+  box-shadow: -3px 3px var(--main-dark-grey), -2px 2px var(--main-dark-grey), -1px 1px var(--main-dark-grey);
+  border: 1px solid var(--main-dark-grey);
+}
+
+.activity-icon-all {
+  margin: 8px auto;
+  display: block;
+  padding: 10px 0px;
+  width: 20vh;
+  // color: var(--main-black);
+  border: 1px solid var(--main-dark-grey);
+  box-shadow: -3px 3px var(--main-dark-grey), -2px 2px var(--main-dark-grey), -1px 1px var(--main-dark-grey);
+}
+
+label.activity-type > input {
+  visibility: hidden;
+  position: absolute;
+}
+
+label.activity-type > input + img {
+  cursor: pointer;
+}
+
+label.activity-type > input + .activity-icon-all {
+  cursor: pointer;
+}
+
+label.activity-type > input:checked + img {
+  // border: 1px solid var(--main-green);
+  background-color: var(--main-green);
+  box-shadow: none;
+  border: none;
+}
+
+label.activity-type > input:checked + .activity-icon-all {
+  box-shadow: none;
+  background-color: var(--main-green);
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.location-search > input {
+  width: 14em;
+  height: 2em;
+  font-size: 1.4em;
+}
+
+.location-search {
+  margin: 16px 0 0 0;
+}
