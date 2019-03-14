@@ -60,7 +60,9 @@
             <p class="comment-body">"<%= comment.body %>"</p>
             <!-- Check if user created comment to have authorization to delete it  -->
             <% if comment.user.id == current_user.id %>
-              <%= button_to "delete comment", event_comment_path(@event, comment.id), data: { confirm: "Are you sure?" }, method: :delete %>
+              <div class="delete-comment-button">
+                <%= button_to "delete", event_comment_path(@event, comment.id), data: { confirm: "Are you sure?" }, method: :delete %>
+              </div>
             <% end %>
           </div>
         <% end %>
