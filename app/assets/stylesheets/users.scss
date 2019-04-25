@@ -59,32 +59,39 @@
 
 .user-card {
   display: flex;
-  flex-direction: column;
+  justify-content: left;
   background-color: white;
   margin: 1em 2em 1em 2em;
   border: 1px solid black;
   text-align: left;
-  transition: 0.3s;
 }
 
 .user-card-content {
-  padding: 1em;
+  margin: 1em;
+}
+
+.index-user-name {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 
-.user-reults {
-  max-width: 42em;
+.user-results {
+  max-width: fit-content;
   margin: auto;
+}
+
+.user-results a {
+  text-decoration: none;
+  color: black;
 }
 
 
 .profile-avatar {
-  display: inline-block;
-  width: 18%;
+  width: 100px;
   vertical-align: top;
-  float: right;
-  padding: 0;
-}
+  margin: 1em;
+  }
 
 
 .user-profile-card {
